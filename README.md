@@ -18,12 +18,12 @@ Kernel-registered.
 
 ## Layout
 - Engine (future): `src/` — editor, world, physics, scripting seams.
-- Tests: umbrella `tests/` has no `anti/` partition yet; until then keep seam
-  tests in-repo under `tests/` (never inside source dirs, per the Test
-  Segregation Law).
+- Tests: the shared `tests/` repo hosts a `tests/anti/` partition (mirrored per
+  unit, the Test Tree Mirror Law); no test file lives inside this repo's source
+  directories (the Test Segregation Law).
 
 ## Laws that govern work here
-- Constitution: `../../preferences.md` (umbrella symlink → `ecosystem/vexspoke/preferences.md`).
+- Constitution: the universal [`preferences.md`](../../ecosystem/vexspoke/preferences.md) (canonical file; the workspace root links to it).
 - Commits land in THIS repo root, one cohesive unit each; never push unless asked.
 - One public class per `.h`/`.c` pair, `(*ptr).field` (never `->`), dest-last
   params, `-Wall -Wextra -Werror`.
