@@ -1,5 +1,16 @@
 # anti — R5 3D game engine
 
+## CLion: CMake is IDE metadata only
+
+Open this repository root as a CMake project. `CMakeLists.txt` is an IDE-only
+blueprint entry: there are no production sources or C23 source targets yet,
+so there is nothing to provide semantic diagnostics or inlay hints for.
+No fake declarations, dependency downloads, linking or application runner are
+wired into it. IDE appearance is user-verified.
+
+Future builds belong to [b](https://github.com/vex-graph/b). No runnable game
+target or standalone runtime build is claimed by this metadata entry.
+
 **Role:** R5 Interactable — 5-column editor, bindless rendering, meshlets,
 physics, `darkbase` persistence. The `anti` name lives here (per the Identity
 & Naming Transition Law: the engine core moved to `vexspoke`, the game engine
