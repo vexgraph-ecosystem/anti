@@ -36,7 +36,10 @@ game tooling, supervised through the host and public lower-tier contracts.
 R1–R5); GPU shaders/dispatch remain Graphvex R3; no lower-tier implementation is owned
 here.
 
-**Known limits and gaps:** these are design goals, not a shipped superapp. R2
+**Known limits and gaps:** these are design goals, not a shipped superapp. No local lawbook
+(`anti-preferences.md`) exists yet; that missing repo-local preferences file is an explicit gap until
+this repository gains source, and the universal constitution plus applicable test laws still bind
+(the Per-Repo Preferences Extension Law). R2
 is split between Vexspoke CPU computation/behavior and Relational Engine
 memory/storage/native C search; migration is staged with the retained Vexspoke
 ABI/default allocator. No C/Rust atomic-layout equivalence, automatic schema
